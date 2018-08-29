@@ -6,7 +6,7 @@ class GetContractsSpider(scrapy.Spider):
     name = 'get_contracts'
     allowed_domains = ['base.gov.pt']
     base_url = 'http://www.base.gov.pt/base2/rest/contratos'
-    ncontracts = 867164
+    ncontracts = 920978
     step = 100
 
     def start_requests(self):
