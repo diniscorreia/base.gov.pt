@@ -102,8 +102,7 @@ class ContractsPipeline(object):
         def normalizeCurrency(money):
             """Converts a Portuguese local currency string in a float unit."""
             normalized = re.sub(r'^((\d+)\.)?(\d+),(\d+) €$', r'\2\3.\4', money)
-            numeric = normalized.group()
-            return float(numeric)
+            return float(normalized)
 
         # Normalize the total effective price
         if item['totalEffectivePrice']:
